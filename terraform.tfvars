@@ -14,7 +14,7 @@ environment          = "production"
   #testing     = "t2.small"
   #production  = "t2.medium"
 #}
-instance_type = "t2.medium"
+instance_type = "t2.large"
 amis = {
   eu-west-2 = "ami-0b9932f4918a00c4f" # Canonical, Ubuntu, 20.04 LTS, amd64 focal image
   us-east-2 = "ami-0430580de6244e02e" # Canonical, Ubuntu, 20.04 LTS, amd64 focal image

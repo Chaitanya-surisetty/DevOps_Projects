@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helm-nginx
+  namespace: helm-nginx
+spec:
+  selector:
+    matchLabels:
+      app: helm-nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: helm-nginx
+    spec:
+      containers:
+        - name: helm-nginx
+          image: helm-nginx
+          ports:
+            - containerPort: 8080
